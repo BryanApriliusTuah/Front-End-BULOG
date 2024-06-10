@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print</title>
+
+    <link rel="stylesheet" href="css/print.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="js/table.js"></script>
+</head>
+<body>
+
+    <div class="print-pinjaman-header">
+        <div class="title-pinjaman">
+            <div class="koperasi-pinjaman">KOPERASI BERKAH SUKSES MANDIRI</div>
+            <div class="alamat-pinjaman">PALANGKA RAYA, KALIMANTAN TENGAH, Telp. 08123456789</div>
+        </div>
+        <div class="bukti-pinjaman">
+            <div class="bukti-pengajuan-pinjaman">BUKTI PENCAIRAN DANA KREDIT</div>
+            <div class="ref-pinjaman">Ref. </div>
+        </div>
+    </div>
+    <div class="pinjaman-body">
+        <div class="table1-pinjaman">
+            <label>Identitas Anggota</label>
+            <table>
+                <tr>
+                    <td>Nomor Kontrak</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Id Anggota</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Nama Anggota</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Departement</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tanggal Pinjam</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tangal Tempo</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Lama Pinjam</td>
+                    <td>:</td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div class="table2-pinjaman">
+            <label>Rincian Pengajuan</label>
+            <table>
+                <tr>
+                    <td>Total Pinjaman</td>
+                    <td>:</td>
+                    <td>Rp. </td>
+                </tr>
+                <tr>
+                    <td>Pokok Pinjaman</td>
+                    <td>:</td>
+                    <td>Rp. </td>
+                </tr>
+                <tr>
+                    <td>Angsuran Pokok</td>
+                    <td>:</td>
+                    <td>Rp. </td>
+                </tr>
+                <tr>
+                    <td>Biaya Admin</td>
+                    <td>:</td>
+                    <td>Rp. </td>
+                </tr>
+                <tr>
+                    <td>Angsuran Bagi Hasil (Bunga)</td>
+                    <td>:</td>
+                    <td>Rp. </td>
+                </tr>
+                <tr>
+                    <td>Asuransi</td>
+                    <td>:</td>
+                    <td>Rp. </td>
+                </tr>
+                <tr>
+                    <td>Jumlah Angsuran</td>
+                    <td>:</td>
+                    <td>Rp. </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="pinjaman-footer">
+        <div class="paraf-pinjaman">
+            <p>Palangka Raya , </p>
+            <p>Admin</p>
+        </div>
+        <p>** Tanda terima ini sah jika telah dibubuhi cap dan tanda tangan oleh Admin **</p>
+    </div>
+
+    <button onclick="print2()">click</button>
+    <script>
+        function print2(){
+            print();
+        }
+    </script>
+</body>
+</html>

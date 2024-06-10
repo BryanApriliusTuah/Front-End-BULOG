@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Koperasi BULOG Manajemen Sistem</title>
+
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/logo_bulog.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form">
+        <div class="sign-up">
+            <div class="text">
+                <img src="img/eKoperasi (2).png" alt="">
+            </div>
+            <div class="Username">
+                <img src="img/id-card.gif">
+                <input type="text" placeholder="Username"> 
+            </div>
+            <div class="Password">
+                <img src="img/password.gif">
+                <input type="password" placeholder="Password"> 
+            </div>
+            <div class="see" onclick="Open()">
+                <input type="checkbox">
+                See Password
+                <img src="img/user-security.gif">
+            </div>
+            <div class="button" onclick="check_login()">
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="image">
+            <img src="img/resource.gif">
+            <img src="img/management-consulting.gif">
+        </div>
+    </div>
+</body>
+    <script>
+        document.querySelector('.Username input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                document.querySelector('.Password input').focus();
+            }
+        });
+
+        document.querySelector('.Password input').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault();
+                document.querySelector('.button').click();
+            }
+        });
+    </script>
+    <script src="js/Show-Password.js"></script>
+    <script src="js/API.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>
