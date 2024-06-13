@@ -539,7 +539,7 @@ async function UpdateJenisSimpanan(New,Old){
 async function DeleteJenisSimpanan(Arr){
     let data = {
         Jenis_Simpanan : Arr[1],
-        Jumlah : Arr[2],
+        Kode_Akun : Arr[2],
         Tampil : Arr[3]
     }
 
