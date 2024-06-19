@@ -1229,7 +1229,7 @@ function Update_MD_Data_Pengguna(event){
 }
 
 // Settings
-function Update_Identitas_Koperasi(event){
+async function Update_Identitas_Koperasi(event){
     const valueArray = []
     const parent = event.target.parentElement.parentElement
     const inputvalue = parent.querySelectorAll(".a")
@@ -1239,11 +1239,11 @@ function Update_Identitas_Koperasi(event){
             valueArray.push(Value.value)
         }
     })
-
-    Update(valueArray)
+    
+    await UpdateIdentitasKoperasi(valueArray)
     identitas_koperasi()
 }
-function Update_Bagi_Hasil(event){
+async function Update_Bagi_Hasil(event){
     const valueArray = []
     const parent = event.target.parentElement.parentElement
     const inputvalue = parent.querySelectorAll(".a")
@@ -1257,7 +1257,6 @@ function Update_Bagi_Hasil(event){
             valueArray.push(Value.value)
         }
     })
-
-    UpdateBagiHasil(valueArray)
+    await UpdateBagiHasil(valueArray)
     bagi_hasil()
 }
