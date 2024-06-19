@@ -1,6 +1,6 @@
 // Transaksi Kas - Pemasukan
 async function GetPemasukan(){
-    let response = await fetch(`http://103.16.117.87:5500/TRPemasukan`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/TRPemasukan`,{
         method : "GET"
     })
 
@@ -17,7 +17,7 @@ async function PostPemasukan(Arr){
         User : Arr[5]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRPemasukan2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRPemasukan2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -44,7 +44,7 @@ async function UpdatePemasukan(New,Old){
         Kode_Transaksi_Old : Old[1]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRPemasukan3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRPemasukan3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -63,7 +63,7 @@ async function DeletePemasukan(Arr){
         User : Arr[7]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRPemasukan4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRPemasukan4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -75,7 +75,7 @@ async function DeletePemasukan(Arr){
 
 // Transaksi Kas - Pengeluaran
 async function GetPengeluaran(){
-    let response = await fetch(`http://103.16.117.87:5500/TRPengeluaran`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/TRPengeluaran`,{
         method : "GET"
     })
 
@@ -92,7 +92,7 @@ async function PostPengeluaran(Arr){
         User : Arr[5]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRPengeluaran2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRPengeluaran2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -116,7 +116,7 @@ async function UpdatePengeluaran(New,Old){
         User_Old : Old[7]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRPengeluaran3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRPengeluaran3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -134,7 +134,7 @@ async function DeletePengeluaran(Arr){
         User : Arr[7]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRPengeluaran4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRPengeluaran4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -145,7 +145,7 @@ async function DeletePengeluaran(Arr){
 
 // Transaksi Kas - Transfer
 async function GetTransfer(){
-    let response = await fetch(`http://103.16.117.87:5500/TRTransfer`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/TRTransfer`,{
         method : "GET"
     })
 
@@ -162,7 +162,7 @@ async function PostTransfer(Arr){
         User : Arr[5]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRTransfer2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRTransfer2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -186,7 +186,7 @@ async function UpdateTransfer(New,Old){
         User_Old : Old[7]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRTransfer3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRTransfer3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -204,7 +204,7 @@ async function DeleteTransfer(Arr){
         User : Arr[7]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/TRTransfer4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/TRTransfer4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -215,7 +215,7 @@ async function DeleteTransfer(Arr){
 
 // Simpanan - Setoran Anggota
 async function GetSetoranAnggota(){
-    let response = await fetch(`http://103.16.117.87:5500/SSetoranAnggota`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/SSetoranAnggota`,{
         method : "GET"
     })
 
@@ -233,7 +233,7 @@ async function PostSetoranAnggota(Arr){
         User : Arr[6]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/SSetoranAnggota2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/SSetoranAnggota2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -260,7 +260,7 @@ async function UpdateSetoranAnggota(New, Old){
         User_Old : Old[10]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/SSetoranAnggota3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/SSetoranAnggota3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -279,7 +279,7 @@ async function DeleteSetoranAnggota(Arr){
         User : Arr[10]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/SSetoranAnggota4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/SSetoranAnggota4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -290,7 +290,7 @@ async function DeleteSetoranAnggota(Arr){
 
 // Simpanan - Penarikan Simpanan
 async function GetPenarikanSimpanan(){
-    let response = await fetch(`http://103.16.117.87:5500/SPenarikanSimpanan`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/SPenarikanSimpanan`,{
         method : "GET"
     })
 
@@ -308,7 +308,7 @@ async function PostPenarikanSimpanan(Arr){
         User : Arr[6]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/SPenarikanSimpanan2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/SPenarikanSimpanan2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -335,7 +335,7 @@ async function UpdatePenarikanSimpanan(New, Old){
         User_Old : Old[10]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/SPenarikanSimpanan3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/SPenarikanSimpanan3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -354,7 +354,7 @@ async function DeletePenarikanSimpanan(Arr){
         User : Arr[10]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/SPenarikanSimpanan4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/SPenarikanSimpanan4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -365,7 +365,7 @@ async function DeletePenarikanSimpanan(Arr){
 
 // Pinjaman - Data Pinjaman
 async function GetDataPinjaman(){
-    let response = await fetch(`http://103.16.117.87:5500/PDataPinjaman`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/PDataPinjaman`,{
         method : "GET"
     })
 
@@ -387,7 +387,7 @@ async function PostDataPinjaman(Arr){
         User : Arr[9]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/PDataPinjaman2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/PDataPinjaman2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -431,7 +431,7 @@ async function UpdateDataPinjaman(New, Old){
         Lunas_Old : Old[58]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/PDataPinjaman3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/PDataPinjaman3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -448,7 +448,7 @@ async function DeleteDataPinjaman(Arr){
         Ambil_Dari_Kas : Arr[57]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/PDataPinjaman4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/PDataPinjaman4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -459,7 +459,7 @@ async function DeleteDataPinjaman(Arr){
 
 // Pinjaman - Bayar Angsuran
 async function GetBayarAngsuran(){
-    let response = await fetch(`http://103.16.117.87:5500/PBayarAngsuran`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/PBayarAngsuran`,{
         method : "GET"
     })
 
@@ -473,7 +473,7 @@ async function UpdateBayarAngsuran(New, Old){
         Simpan_Ke_Kas : New[4]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/PBayarAngsuran3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/PBayarAngsuran3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -484,7 +484,7 @@ async function UpdateBayarAngsuran(New, Old){
 
 // Laporan - Jurnal Umum
 async function GetJurnalUmum(){
-    let response = await fetch(`http://103.16.117.87:5500/LJurnalUmum`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/LJurnalUmum`,{
         method : "GET"
     })
 
@@ -494,7 +494,7 @@ async function GetJurnalUmum(){
 
 // Master Data - Jenis Simpanan
 async function GetJenisSimpanan(){
-    let response = await fetch(`http://103.16.117.87:5500/MDJenisSimpanan`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDJenisSimpanan`,{
         method : "GET"
     })
 
@@ -508,7 +508,7 @@ async function PostJenisSimpanan(Jenis_Simpanan, Kode_Akun, Tampil){
         Tampil : Tampil
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisSimpanan2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisSimpanan2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -527,7 +527,7 @@ async function UpdateJenisSimpanan(New,Old){
         Tampil_Old : Old[3]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisSimpanan3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisSimpanan3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -543,7 +543,7 @@ async function DeleteJenisSimpanan(Arr){
         Tampil : Arr[3]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisSimpanan4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisSimpanan4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -555,7 +555,7 @@ async function DeleteJenisSimpanan(Arr){
 
 // Master Data - Jenis Akun
 async function GetJenisAkun(){
-    let response = await fetch(`http://103.16.117.87:5500/MDJenisAkun`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDJenisAkun`,{
         method : "GET"
     })
 
@@ -573,7 +573,7 @@ async function PostJenisAkun(Kode_Aktiva, Jenis_Transaksi, Akun, Pemasukan, Peng
         Laba_Rugi : Laba_Rugi
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisAkun2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisAkun2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -601,7 +601,7 @@ async function UpdateJenisAkun(New,Old){
         Laba_Rugi_Old: Old[7]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisAkun3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisAkun3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -621,7 +621,7 @@ async function DeleteJenisAkun(Arr){
         Laba_Rugi: Arr[7]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisAkun4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisAkun4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -633,7 +633,7 @@ async function DeleteJenisAkun(Arr){
 
 // Master Data - Data Kas
 async function GetDataKas(){
-    let response = await fetch(`http://103.16.117.87:5500/MDDataKas`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDDataKas`,{
         method : "GET"
     })
 
@@ -653,7 +653,7 @@ async function PostDataKas(Nama_Kas, Aktif, Simpanan, Penarikan, Pinjaman, Angsu
         Transfer_Kas : Transfer_Kas
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataKas2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataKas2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -685,7 +685,7 @@ async function UpdateDataKas(New,Old){
         Transfer_Kas_Old : Old[9],
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataKas3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataKas3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -707,7 +707,7 @@ async function DeleteDataKas(Arr){
         Transfer_Kas : Arr[9]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataKas4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataKas4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -719,7 +719,7 @@ async function DeleteDataKas(Arr){
 
 // Master Data - Lama Angsuran
 async function GetLamaAngsuran(){
-    let response = await fetch(`http://103.16.117.87:5500/MDLamaAngsuran`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDLamaAngsuran`,{
         method : "GET"
     })
 
@@ -732,7 +732,7 @@ async function PostLamaAngsuran(Lama_Angsuran, Aktif){
         Aktif : Aktif
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDLamaAngsuran2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDLamaAngsuran2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -749,7 +749,7 @@ async function UpdateLamaAngsuran(New,Old){
         Aktif_Old : Old[2],
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDLamaAngsuran3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDLamaAngsuran3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -764,7 +764,7 @@ async function DeleteLamaAngsuran(Arr){
         Aktif : Arr[2]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDLamaAngsuran4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDLamaAngsuran4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -776,7 +776,7 @@ async function DeleteLamaAngsuran(Arr){
 
 // Master Data - Data Departemen
 async function GetDataDepartemen(){
-    let response = await fetch(`http://103.16.117.87:5500/MDJenisDepartemen`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDJenisDepartemen`,{
         method : "GET"
     })
 
@@ -788,7 +788,7 @@ async function PostDataDepartemen(Nama_Departemen){
         Nama_Departemen : Nama_Departemen
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisDepartemen2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisDepartemen2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -803,7 +803,7 @@ async function UpdateDataDepartemen(New,Old){
         Nama_Departemen_Old : Old[1]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisDepartemen3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisDepartemen3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -817,7 +817,7 @@ async function DeleteDataDepartemen(Arr){
         Nama_Departemen : Arr[1]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDJenisDepartemen4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDJenisDepartemen4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -829,7 +829,7 @@ async function DeleteDataDepartemen(Arr){
 
 // Master Data - Data Pekerjaan
 async function GetDataPekerjaan(){
-    let response = await fetch(`http://103.16.117.87:5500/MDDataPekerjaan`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDDataPekerjaan`,{
         method : "GET"
     })
 
@@ -841,7 +841,7 @@ async function PostDataPekerjaan(Nama_Pekerjaan){
         Nama_Pekerjaan : Nama_Pekerjaan
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataPekerjaan2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataPekerjaan2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -856,7 +856,7 @@ async function UpdateDataPekerjaan(New,Old){
         Nama_Pekerjaan_Old : Old[1]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataPekerjaan3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataPekerjaan3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -870,7 +870,7 @@ async function DeleteDataPekerjaan(Arr){
         Nama_Pekerjaan : Arr[1]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataPekerjaan4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataPekerjaan4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -882,7 +882,7 @@ async function DeleteDataPekerjaan(Arr){
 
 // Master Data - Data Barang
 async function GetDataBarang(){
-    let response = await fetch(`http://103.16.117.87:5500/MDDataBarang`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDDataBarang`,{
         method : "GET"
     })
 
@@ -899,7 +899,7 @@ async function PostDataBarang(Nama_Barang, Type, Merk, Harga, Jumlah_Barang, Ket
         Ket : Ket
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataBarang2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataBarang2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -924,7 +924,7 @@ async function UpdateDataBarang(New,Old){
         Ket_Old : Old[6]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataBarang3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataBarang3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -943,7 +943,7 @@ async function DeleteDataBarang(Arr){
         Ket : Arr[6]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataBarang4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataBarang4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -955,7 +955,7 @@ async function DeleteDataBarang(Arr){
 
 // Master Data - Data Anggota
 async function GetDataAnggota(){
-    let response = await fetch(`http://103.16.117.87:5500/MDDataAnggota`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDDataAnggota`,{
         method : "GET"
     })
 
@@ -975,7 +975,7 @@ async function PostDataAnggota(Username, Nama_Lengkap, JK, Alamat, Kota, Jabatan
         Aktif_Keanggotaan : Aktif_Keanggotaan
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataAnggota2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataAnggota2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1007,7 +1007,7 @@ async function UpdateDataAnggota(New,Old){
         Aktif_Keanggotaan_Old : Old[10]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataAnggota3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataAnggota3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1029,7 +1029,7 @@ async function DeleteDataAnggota(Arr){
         Aktif_Keanggotaan : Arr[10]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataAnggota4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataAnggota4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1072,7 +1072,7 @@ function check_login(){
     })   
 }
 async function GetLogin(){
-    let response = await fetch(`http://103.16.117.87:5500/MDDataPengguna`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/MDDataPengguna`,{
         method : "GET"
     })
 
@@ -1087,7 +1087,7 @@ async function PostLogin(Username,Password,Level,Aktif){
         Aktif : Aktif
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataPengguna2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataPengguna2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1107,7 +1107,7 @@ async function UpdateLogin(New,Old){
         Aktif_Old : Old[3]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataPengguna3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataPengguna3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1123,7 +1123,7 @@ async function DeleteLogin(Arr){
         Aktif : Arr[3]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/MDDataPengguna4", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/MDDataPengguna4", {
         method : "DELETE",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1135,7 +1135,7 @@ async function DeleteLogin(Arr){
 
 // Settings - Identitas Koperasi
 async function GetIdentitasKoperasi(){
-    let response = await fetch(`http://103.16.117.87:5500/STIdentitasKoperasi`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/STIdentitasKoperasi`,{
         method : "GET"
     })
 
@@ -1154,7 +1154,7 @@ async function PostIdentitasKoperasi(arr){
         Website : arr[7]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/STIdentitasKoperasi2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/STIdentitasKoperasi2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1175,7 +1175,7 @@ async function UpdateIdentitasKoperasi(New){
         Website : New[7],
     }
 
-    let response = await fetch("http://103.16.117.87:5500/STIdentitasKoperasi3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/STIdentitasKoperasi3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1187,7 +1187,7 @@ async function UpdateIdentitasKoperasi(New){
 
 // Settings - Bagi Hasil
 async function GetBagiHasil(){
-    let response = await fetch(`http://103.16.117.87:5500/STBagiHasil`,{
+    let response = await fetch(`http://kbmskalteng.my.id:5500/STBagiHasil`,{
         method : "GET"
     })
 
@@ -1215,7 +1215,7 @@ async function PostBagiHasil(arr){
         Limit_Pagu_Pinjaman : arr[16]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/STBagiHasil2", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/STBagiHasil2", {
         method : "POST",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
@@ -1246,7 +1246,7 @@ async function UpdateBagiHasil(New){
             Limit_Pagu_Pinjaman : New[17]
     }
 
-    let response = await fetch("http://103.16.117.87:5500/STBagiHasil3", {
+    let response = await fetch("http://kbmskalteng.my.id:5500/STBagiHasil3", {
         method : "PUT",
         body : JSON.stringify(data),
         headers : {'Content-type': 'application/json; charset=UTF-8',}
