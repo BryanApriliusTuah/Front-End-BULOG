@@ -431,6 +431,28 @@
         font-weight: 600;
         visibility: hidden;
     }
+
+    .import {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5vh;
+    }
+
+    .import input {
+        cursor: pointer;
+        border: none;
+        font-family: "Poppins";
+        font-size: 1vw;
+    }
+
+    .import button {
+        cursor: pointer;
+        border: #0073B7;
+        font-family: "Poppins";
+        font-size: 1vw;
+    }
 }
 
 @media (max-width: 768px) {
@@ -819,6 +841,27 @@
         height: 100%;
     }
 
+    .import {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.5vh;
+    }
+
+    .import input {
+        cursor: pointer;
+        border: none;
+        font-family: "Poppins";
+        font-size: 1vw;
+    }
+
+    .import button {
+        cursor: pointer;
+        border: #0073B7;
+        font-family: "Poppins";
+        font-size: 1vw;
+    }
 }
 
 @media (max-width: 425px){

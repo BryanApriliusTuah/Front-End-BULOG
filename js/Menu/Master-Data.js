@@ -496,7 +496,11 @@ function data_anggota_masterdata(){
                         <img src="img/plus.gif" alt="">
                         <label>Tambah Data Anggota</label>
                     </div>
-                    <div class="print" onclick="Export('Data-Anggota')"><img src="img/printer.gif"><label>Ekspor</label></div>       
+                    <div class="print" onclick="Export('Data-Anggota')"><img src="img/printer.gif"><label>Ekspor</label></div>  
+                    <div class='import'>
+                        <input type="file" id="excelFile">
+                        <button type="button" onclick="uploadExcel()">Import</button>
+                    </div>     
                     <div class="print" onclick="form_cetak_table_masterdata()"><img src="img/printer.gif"><label>Cetak</label></div>       
                 </div>
                 <div class="table-content">
